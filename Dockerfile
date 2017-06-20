@@ -29,7 +29,8 @@ RUN apt-get update && \
         tk8.6-dev \
         python-tk \
         graphviz \
-        libgraphviz-dev
+        libgraphviz-dev \
+        python-pydot
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
