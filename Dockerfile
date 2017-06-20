@@ -27,7 +27,11 @@ RUN apt-get update && \
         liblcms2-dev \
         tcl8.6-dev \
         tk8.6-dev \
-        python-tk
+        python-tk \
+        graphviz \
+        libgraphviz-dev \
+        python-pip \
+        pkg-config \
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
