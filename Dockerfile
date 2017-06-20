@@ -36,7 +36,7 @@ RUN apt-get update && \
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
 RUN ln -sf /usr/bin/nodejs /usr/local/bin/node
-RUN npm install -g phantomjs-prebuilt
+# RUN npm install -g phantomjs-prebuilt
 
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py
