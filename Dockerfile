@@ -29,14 +29,12 @@ RUN apt-get update && \
         tk8.6-dev \
         python-tk \
         graphviz \
-        libgraphviz-dev \
-        python-pip \
-        pkg-config \
+        libgraphviz-dev
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
 RUN ln -sf /usr/bin/nodejs /usr/local/bin/node
-# RUN npm install -g phantomjs-prebuilt
+RUN npm install -g phantomjs-prebuilt
 
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py
